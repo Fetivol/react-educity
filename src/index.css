@@ -45,3 +45,7 @@ a {
   background: #212ea0;
   color: #fff;
 }
+
+address {
+  font-style: normal;
+}
