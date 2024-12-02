@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Testimonials.css";
 import next_icon from "../../assets/next-icon.png";
 import back_icon from "../../assets/back-icon.png";
@@ -9,19 +9,22 @@ import user_4 from "../../assets/user-4.png";
 
 const Testimonials = () => {
   const slider = useRef();
-  let tx = 0;
+  const [tx, setTx] = useState(0);
+  let maxTx = -50;
 
   const slideForward = () => {
-    if (tx > -50) {
-      tx -= 25;
+    if (tx > maxTx) {
+      const newTx = tx - 25;
+      setTx(newTx);
+      slider.current.style.transform = `translateX(${newTx}%)`;
     }
-    slider.current.style.transform = `translateX(${tx}%)`;
   };
   const slideBackward = () => {
     if (tx < 0) {
-      tx += 25;
+      const newTx = tx + 25;
+      setTx(newTx);
+      slider.current.style.transform = `translateX(${newTx}%)`;
     }
-    slider.current.style.transform = `translateX(${tx}%)`;
   };
 
   return (
@@ -29,13 +32,13 @@ const Testimonials = () => {
       <img
         src={next_icon}
         alt="next button"
-        className="next-btn"
+        className={`next-btn ${tx === maxTx ? "hidden" : ""}`}
         onClick={slideForward}
       />
       <img
         src={back_icon}
         alt="back button"
-        className="back-btn"
+        className={`back-btn ${tx === 0 ? "hidden" : ""}`}
         onClick={slideBackward}
       />
       <div className="slider">

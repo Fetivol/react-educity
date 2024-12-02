@@ -15,8 +15,14 @@
   border-radius: 50%;
   cursor: pointer;
   background: #212ea0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 1;
+  visibility: visible;
 }
-
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 .back-btn {
   right: auto;
   left: 0;
