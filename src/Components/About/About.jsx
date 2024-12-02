@@ -12,12 +12,12 @@ const About = () => {
       </div>
       <div className="about-right">
         <h3>About Univercity</h3>
-        <h2>Nurturing Tomorrow's Leaders Today</h2>
+        <h2>Nurturing Tomorrow&apos;s Leaders Today</h2>
         <p>
-          Embark on a transformative educational journey with our university's
-          comprehensive education programs. Our cutting-edge curriculum is
-          designed to empower students with the knowledge, skills, and
-          experiences needed to excel in the dynamic field of education.
+          Embark on a transformative educational journey with our
+          university&apos;s comprehensive education programs. Our cutting-edge
+          curriculum is designed to empower students with the knowledge, skills,
+          and experiences needed to excel in the dynamic field of education.
         </p>
         <p>
           With a focus on innovation, hands-on learning, and personalized
