@@ -63,5 +63,15 @@
 
 .contact-col span {
   display: block;
-  margin: 20px 0;
+}
+
+/*---------------- Media query ---------------*/
+
+@media (max-width: 800px) {
+  .contact {
+    display: block;
+  }
+  .contact-col {
+    padding: 20px;
+  }
 }

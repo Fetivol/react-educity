@@ -49,3 +49,14 @@ a {
 address {
   font-style: normal;
 }
+
+/*---------------- Media query ---------------*/
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn {
+    padding: 14px 22px;
+  }
+}
