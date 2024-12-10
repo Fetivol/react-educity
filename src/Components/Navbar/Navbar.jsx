@@ -41,6 +41,8 @@ const Navbar = () => {
         <li>
           <Link
             to="hero"
+            activeClass="active"
+            spy={true}
             smooth={true}
             offset={0}
             duration={500}
@@ -52,8 +54,10 @@ const Navbar = () => {
         <li>
           <Link
             to="program"
+            activeClass="active"
+            spy={true}
             smooth={true}
-            offset={-260}
+            offset={-200}
             duration={500}
             onClick={toggleMenu}
           >
@@ -63,6 +67,8 @@ const Navbar = () => {
         <li>
           <Link
             to="about"
+            activeClass="active"
+            spy={true}
             smooth={true}
             offset={-150}
             duration={500}
@@ -74,6 +80,8 @@ const Navbar = () => {
         <li>
           <Link
             to="campus"
+            activeClass="active"
+            spy={true}
             smooth={true}
             offset={-260}
             duration={500}
@@ -85,6 +93,8 @@ const Navbar = () => {
         <li>
           <Link
             to="testimonials"
+            activeClass="active"
+            spy={true}
             smooth={true}
             offset={-260}
             duration={500}
@@ -96,6 +106,8 @@ const Navbar = () => {
         <li>
           <Link
             to="contact"
+            activeClass="active"
+            spy={true}
             smooth={true}
             offset={-260}
             duration={500}

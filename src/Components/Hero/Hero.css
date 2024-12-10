@@ -5,7 +5,7 @@
     url("../../assets/hero.png");
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--additional-color);
   display: flex;
   align-items: center;
   justify-content: center;
